@@ -88,7 +88,7 @@ footer h5.footerContent {
 .tMain {
   height: 100vh;
   width: 100vw;
-  background-image: url('../images/yellow3.jpg');
+  background-image: url('../images/yellow.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -98,7 +98,7 @@ footer h5.footerContent {
 }
 @media (max-width:1000px) {
   .tMain {
-    background-position: left;
+    background-position: center;
     /*background-image: url('../images/yellowDark2.jpg');*/
   }
 }
@@ -166,7 +166,7 @@ header h1.title {
     letter-spacing: 6px;
     height: 45px;
     padding: 0;
-    /*background-color: @P_black;*/
+    background-color: #333333;
   }
 }
 header h1.title span#highlighter2 {
@@ -205,7 +205,7 @@ header h4.underTitle {
     height: 30px;
     width: 100%;
     margin-top: 0px;
-    background-color: initial;
+    background-color: #fffdf9;
   }
 }
 header h4.underTitle span.highlighter {
@@ -242,273 +242,37 @@ header #signup:hover {
     margin: 10px auto;
   }
 }
-/*Trending Subjects*/
-section#trSubject {
-  padding: 30px auto 30px auto;
-  width: 100vw;
-  display: block;
-  background-color: #fffdf9;
-}
-@media (max-width:800px) {
-  section#trSubject {
-    display: block;
-    height: 100%;
-  }
-}
-@media (max-width:1000px) {
-  section#trSubject {
-    display: block;
-    height: 100%;
-  }
-}
-section#trSubject h3.trSubjectTitle {
-  width: 85%;
-  height: 40px;
-  text-align: center;
-  font-family: 'Open Sans Condensed';
-  font-size: 40px;
-  letter-spacing: 8px;
-  color: #555555;
-  margin: 35px auto;
-}
-@media (max-width:800px) {
-  section#trSubject h3.trSubjectTitle {
-    font-size: 30px;
-    height: 40px;
-    line-height: 30px;
-    margin: 30px auto;
-  }
-}
-@media (max-width:1000px) {
-  section#trSubject h3.trSubjectTitle {
-    font-size: 30px;
-    height: 40px;
-    line-height: 30px;
-    margin: 30px auto;
-  }
-}
-section#trSubject section.trSubjectCards {
-  width: 90%;
-  height: 80%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-@media (max-width:800px) {
-  section#trSubject section.trSubjectCards {
-    width: 100%;
-  }
-}
-@media (max-width:1000px) {
-  section#trSubject section.trSubjectCards {
-    width: 100%;
-  }
-}
-section#trSubject section.trSubjectCards div.trCard {
-  display: flex;
-  width: 275px;
-  height: 300px;
-  background-color: #fffdf9;
-  border-radius: 9px;
-  box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.4);
-  color: #1b262c;
-  text-align: center;
-  justify-content: space-around;
-  align-items: center;
-  letter-spacing: 5px;
-  font-family: 'Open Sans Condensed';
-  font-size: default;
-  margin: 15px auto;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-section#trSubject section.trSubjectCards div.trCard:hover {
-  box-shadow: none;
-  cursor: pointer;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-@media (max-width:800px) {
-  section#trSubject section.trSubjectCards div.trCard {
-    width: 90%;
-    height: 200px;
-    margin: 15px auto;
-  }
-}
-@media (max-width:1000px) {
-  section#trSubject section.trSubjectCards div.trCard {
-    width: 90%;
-    height: 200px;
-    margin: 15px auto;
-  }
-}
-section#trSubject section.trSubjectCards div.trCard h4.trCardTitle {
-  display: flex;
-  width: 250px;
-  height: 30px;
-  color: #fffdf9;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  letter-spacing: 6px;
-  font-family: 'Open Sans Condensed';
-  font-size: 25px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-section#trSubject section.trSubjectCards div.trCard h4.trCardTitle:hover {
-  text-decoration: underline;
-  text-decoration-color: #fffdf9;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-section#trSubject section.trSubjectCards #quantum {
-  background-image: url("../images/quantum.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-}
-section#trSubject section.trSubjectCards #comSci {
-  background-image: url("../images/computerScience.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-}
-section#trSubject section.trSubjectCards #biology {
-  background-image: url("../images/biology.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-}
-section#trSubject section.trSubjectCards #zoology {
-  background-image: url("../images/Animals.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-}
-section#trSubject section.trSubjectCards #poliSci {
-  background-image: url("../images/PoliSci.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-}
-/*Trending Articles*/
-section#trArticles {
-  width: 100vw;
-  display: block;
-  background-color: #fffdf9;
-  margin-bottom: 30px;
-}
-section#trArticles h3.trArticlesTitle {
-  width: 85%;
-  height: 40px;
-  text-align: center;
-  font-family: 'Open Sans Condensed';
-  font-size: 40px;
-  letter-spacing: 8px;
-  color: #555555;
-  margin: 35px auto;
-}
-@media (max-width:800px) {
-  section#trArticles h3.trArticlesTitle {
-    font-size: 30px;
-    height: 40px;
-    line-height: 30px;
-    margin: 30px auto;
-  }
-}
-@media (max-width:1000px) {
-  section#trArticles h3.trArticlesTitle {
-    font-size: 30px;
-    height: 40px;
-    line-height: 30px;
-    margin: 30px auto;
-  }
-}
-section#trArticles section.trArticlesSection {
-  width: 90%;
-  height: 80%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-@media (max-width:800px) {
-  section#trArticles section.trArticlesSection {
-    width: 100%;
-  }
-}
-@media (max-width:1000px) {
-  section#trArticles section.trArticlesSection {
-    width: 100%;
-  }
-}
-section#trArticles section.trArticlesSection div.articleCard {
-  width: 80%;
-  border: 0.45px solid #555555;
-  margin: 15px auto;
-  border-radius: 9px;
-  display: flex;
-  flex-wrap: wrap;
-  box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.4);
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  padding: 25px;
-}
-section#trArticles section.trArticlesSection div.articleCard:hover {
-  box-shadow: 1px 0.5px 2px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-@media (max-width:800px) {
-  section#trArticles section.trArticlesSection div.articleCard {
-    width: 90%;
-  }
-}
-section#trArticles section.trArticlesSection div.articleCard .articleTag {
-  color: #8ac6d1;
-  font-family: 'Open Sans Condensed';
-  font-size: 22px;
-}
-section#trArticles section.trArticlesSection div.articleCard .articleTitle {
-  color: #555555;
-  font-family: 'Raleway';
-  font-size: default;
+section.info {
   width: 100%;
-  text-align: left;
-  margin-bottom: 0px;
+  height: 100%;
 }
-section#trArticles section.trArticlesSection div.articleCard .articleDate {
-  color: #ffb0cc;
-  font-family: 'Open Sans Condensed';
-  font-size: initial;
+section.info div.infoOne {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  text-align: right;
+  height: 50vh;
+  background-color: #fffdf9;
 }
-section#trArticles section.trArticlesSection div.articleCard .articleBlurb {
-  color: #333333;
-  font-family: 'Open Sans Condensed';
-  font-size: 20px;
+section.info div.infoOne #leftSide {
+  width: 50%;
+  height: 100%;
+  /*background-color: #ebebe9;*/
+  /* background-image: url('../images/armLeft.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;*/
 }
-section#trArticles section.trArticlesSection div.articleCard .articleAuthor {
-  font-family: 'Open Sans Condensed';
-  font-size: 20px;
-  text-align: left;
-  color: #8ac6d1;
-  margin: 0px;
+section.info div.infoOne #rightSide {
+  width: 50%;
+  height: 100%;
+}
+section.info div.infoTwo {
+  width: 100%;
+  height: 100vh;
+  background-color: #fffdf9;
+  background-image: url('../images/justYellow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 /*@import "about-page.less";*/
