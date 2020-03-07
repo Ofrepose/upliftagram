@@ -96,6 +96,12 @@ footer h5.footerContent {
   flex-wrap: wrap;
   box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.4);
 }
+@media (max-width:1000px) {
+  .tMain {
+    background-position: top;
+    background-image: url('../images/yellowDark2.jpg');
+  }
+}
 /*Header Section*/
 header {
   height: 400px;
@@ -116,7 +122,7 @@ header {
   }
 }
 header section#slogan {
-  width: 80%;
+  width: 90%;
   height: 100%;
 }
 @media (max-width:1000px) {
@@ -139,45 +145,53 @@ header h1.title {
   font-size: 90px;
   letter-spacing: 9px;
   margin: 0;
+  padding-left: 12px;
+}
+@media (max-width:1000px) {
+  header h1.title {
+    text-align: center;
+    /*font-size: 0px;*/
+    letter-spacing: 9px;
+    /*height: 45px;*/
+  }
 }
 @media (max-width:800px) {
   header h1.title {
     text-align: center;
     font-size: 40px;
     letter-spacing: 6px;
-    height: 40px;
-  }
-}
-@media (max-width:1000px) {
-  header h1.title {
-    text-align: center;
-    font-size: 40px;
-    letter-spacing: 9px;
-    height: 40px;
+    height: 45px;
   }
 }
 header h1.title span#highlighter2 {
   color: #ff7dab;
 }
 header h4.underTitle {
-  width: 100%;
+  width: 660px;
   height: 35px;
   text-align: left;
   font-family: 'Open Sans Condensed';
   font-size: 25px;
   letter-spacing: 12px;
   margin: 0;
+  font-weight: 800;
   color: #333333;
-}
-@media (max-width:800px) {
-  header h4.underTitle {
-    text-align: center;
-    font-size: 20px;
-    letter-spacing: 3px;
-    height: 30px;
-  }
+  padding-left: 12px;
+  background-color: #fffdf9;
 }
 @media (max-width:1000px) {
+  header h4.underTitle {
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 3px;
+    height: 30px;
+    margin: 5px auto;
+    width: 400px;
+    line-height: 25px;
+    padding-left: 0px;
+  }
+}
+@media (max-width:800px) {
   header h4.underTitle {
     text-align: center;
     font-size: 20px;
