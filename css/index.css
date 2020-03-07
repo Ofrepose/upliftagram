@@ -242,6 +242,7 @@ header #signup:hover {
     margin: 10px auto;
   }
 }
+/*INFO SECTION*/
 section.info {
   width: 100%;
   height: 100%;
@@ -252,19 +253,31 @@ section.info div.infoOne {
   width: 100%;
   height: 50vh;
   background-color: #fffdf9;
+  /*background-image: url('../images/background.jpg');*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-content: center;
 }
-section.info div.infoOne #leftSide {
-  width: 50%;
-  height: 100%;
-  /*background-color: #ebebe9;*/
-  /* background-image: url('../images/armLeft.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;*/
+section.info div.infoOne .contentBlock {
+  /*height: 50%;*/
+  width: 80%;
+  display: inline-block;
 }
-section.info div.infoOne #rightSide {
-  width: 50%;
-  height: 100%;
+section.info div.infoOne .contentBlock .underTag {
+  font-family: 'Open Sans Condensed';
+  font-size: 40px;
+  color: #333333;
+  letter-spacing: 6px;
+}
+section.info div.infoOne .contentBlock .underTag #highlight3 {
+  color: #65b4c3;
+  font-weight: 1000;
+  /*text-decoration: underline;*/
+  border-bottom: 0.45px solid #ff97bc;
+  border-top: 0.45px solid #ff97bc;
 }
 section.info div.infoTwo {
   width: 100%;
@@ -274,5 +287,41 @@ section.info div.infoTwo {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+}
+section.info div.infoTwo .container1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 30px;
+  align-content: center;
+}
+section.info div.infoTwo .container1 .largeText {
+  font-family: 'Raleway';
+  font-size: 90px;
+  letter-spacing: 9px;
+  color: #333333;
+  width: 100%;
+}
+section.info div.infoTwo .container1 .largeText #PP {
+  color: #ff97bc;
+}
+section.info div.infoTwo .container1 .largeText #GG {
+  color: #53abbb;
+}
+@media (max-width:1000px) {
+  section.info div.infoTwo .container1 .largeText {
+    text-align: left;
+    padding: 0px;
+    width: 100%;
+  }
+}
+@media (max-width:800px) {
+  section.info div.infoTwo .container1 .largeText {
+    font-family: 'Raleway';
+    font-size: 45px;
+    width: 100%;
+  }
 }
 /*@import "about-page.less";*/
