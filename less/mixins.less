@@ -1,0 +1,45 @@
+/*// Mixins Here*/
+
+
+.centerFlex(){
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.sectionCards(){
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.defaultHead(){
+    height: 100vh;
+      width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+/*Default card photo mixin with parametric naming [@name value should be name of image file]*/
+
+.photoDefault(@name){
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    background-image: @name;
+}
+
+/*Font family mixin with parametric sizing*/
+
+.raleway(@fontSize){
+    font-family: 'Raleway';
+    font-size: @fontSize;
+}
+
+.openSans(@fontSize){
+    font-family: 'Open Sans Condensed', ;
+    font-size: @fontSize;
+}

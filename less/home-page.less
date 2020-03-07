@@ -1,0 +1,417 @@
+/*HOME LESS STYLING*/
+
+.tMain{
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../images/yellow.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+/*Header Section*/
+
+header{
+  height: 400px;
+  width: 95vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media @mobile{
+      width: 100%;
+    }
+
+    @media @tablet{
+      width: 100%;
+    }
+
+
+  /*align-content: center;*/
+
+  section#slogan{
+    width: 80%;
+    height: 100%;
+
+    @media @tablet{
+      width: 100%;
+    }
+
+    @media @mobile{
+      width: 100%;
+    } 
+  }
+  
+
+  h1.title{
+    width: 100%;
+    height: 110px;
+    text-align: left;
+    padding: 0;
+    color: @P_green;
+    .raleway(90px);
+    letter-spacing: 9px;
+    margin: 0;
+
+    @media @mobile{
+      text-align: center;
+      font-size: 40px;
+      letter-spacing: 6px;
+      height: 40px;
+    }
+
+    @media @tablet{
+      text-align: center;
+      font-size: 40px;
+      letter-spacing: 9px;
+      height: 40px;
+    }
+
+    span#highlighter2{
+      color:darken(@P_pink,20%);
+    }
+
+  }
+
+  h4.underTitle{
+    width: 100%;
+    height: 35px;
+    text-align: left;
+    .openSans(25px);
+    letter-spacing: 12px;
+    margin: 0;
+    color: @P_black;
+
+    @media @mobile{
+      text-align: center;
+      font-size: 20px;
+      letter-spacing: 3px;
+      height: 30px;
+    }
+
+    @media @tablet{
+      text-align: center;
+      font-size: 20px;
+      letter-spacing: 3px;
+      height: 30px;
+    }
+
+    
+
+    span.highlighter{
+      color:darken(@P_pink,20%);
+    }
+  }
+
+  #signup{
+    background-color: @P_green;
+    color:@P_pink;
+    width: 190px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 10px auto auto 0;
+    line-height: 30px;
+    text-align: center;
+    .openSans(default);
+    letter-spacing: 6px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+      background-color: @P_pink;
+      color: @P_green;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+    }
+
+    @media @tablet{
+      margin: 10px auto;
+    }
+
+  }
+
+}
+
+/*Trending Subjects*/
+
+section#trSubject{
+  padding: 30px auto 30px auto;
+  width: 100vw;
+  display: block;  
+  background-color: @P_white;
+
+  @media @mobile{
+    display: block;
+    height: 100%;
+  }
+
+  @media @tablet{
+    display: block;
+    height: 100%;
+  }  
+
+  h3.trSubjectTitle{
+    width: 85%;
+    height: 40px;
+    text-align: center;
+    .openSans(40px);
+    letter-spacing: 8px;
+    color: #555555;
+    margin: 35px auto;
+
+    @media @mobile{
+     font-size: 30px;
+     height: 40px;
+     line-height: 30px;
+     margin: 30px auto;
+    }
+
+    @media @tablet{
+      font-size: 30px;
+      height: 40px;
+      line-height: 30px;
+      margin: 30px auto;
+    }
+
+  }
+
+  section.trSubjectCards{
+    .sectionCards();
+
+    @media @mobile{
+    width: 100%;
+    }
+
+    @media @tablet{
+      width: 100%;
+    }
+
+    div.trCard{
+      display: flex;
+      width: 275px;
+      height: 300px;
+      background-color: @P_white;
+      border-radius: 9px;
+      box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.4);
+      color: #1b262c;
+      text-align: center;
+      justify-content: space-around;
+      align-items: center;
+      letter-spacing: 5px;
+      .openSans(default);
+      margin: 15px auto;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+
+      &:hover{
+        box-shadow: none;
+        cursor: pointer;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+      }
+
+      @media @mobile{
+        width: 90%;
+        height: 200px;
+        margin: 15px auto;
+      }
+
+      @media @tablet{
+        width: 90%;
+        height: 200px;
+        margin: 15px auto;
+      }
+
+      h4.trCardTitle{
+        display: flex;
+        width: 250px;
+        height: 30px;
+        color: @P_white; 
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 6px;
+        .openSans(25px);
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;      
+
+        &:hover{
+          text-decoration:underline;
+          text-decoration-color: @P_white;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+        }
+
+      }
+
+    }
+
+    #quantum{
+    background-image: url("../images/quantum.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    }
+
+    #comSci{
+      background-image: url("../images/computerScience.jpg");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+    }
+
+    #biology{
+      background-image: url("../images/biology.jpg");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+    }
+
+    #zoology{
+      background-image: url("../images/Animals.jpg");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+    }
+
+    #poliSci{
+      background-image: url("../images/PoliSci.jpg");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+    }
+
+  }
+
+}
+
+/*Trending Articles*/
+
+section#trArticles{  
+  width: 100vw;
+  display: block;
+  background-color: @P_white;
+  margin-bottom: 30px;
+
+  h3.trArticlesTitle{
+    width: 85%;
+    height: 40px;
+    text-align: center;
+    .openSans(40px);
+    letter-spacing: 8px;
+    color: #555555;
+    margin: 35px auto;
+
+    @media @mobile{
+     font-size: 30px;
+     height: 40px;
+     line-height: 30px;
+     margin: 30px auto;
+    }
+
+    @media @tablet{
+      font-size: 30px;
+      height: 40px;
+      line-height: 30px;
+      margin: 30px auto;
+    }
+
+  }
+
+  section.trArticlesSection{
+    .sectionCards();
+
+    @media @mobile{
+      width: 100%;
+    }
+
+    @media @tablet{
+      width: 100%;
+    }
+
+    div.articleCard{
+      width: 80%;
+      border: .45px solid #555555;
+      margin: 15px auto;
+      border-radius: 9px;
+      display: flex;
+      flex-wrap: wrap;
+      box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.4);
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      padding: 25px;
+
+      &:hover{
+        box-shadow: 1px .5px 2px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+      }
+
+      @media @mobile{
+        width:90%;
+      }
+
+      .articleTag{
+        color: @P_green;
+        .openSans(22px);
+      }
+
+      .articleTitle{
+        color: #555555;
+        .raleway(default);
+        width: 100%;
+        text-align: left;
+        margin-bottom: 0px;
+
+      }
+
+      .articleDate{
+        color: darken(@P_pink,10%);
+        .openSans(initial);
+        width: 100%;
+        text-align: right;
+      }
+
+      .articleBlurb{
+        color: @P_black;       
+        .openSans(20px);
+      }
+
+      .articleAuthor{
+        .openSans(20px);
+        text-align: left;
+        color: @P_green;
+        margin: 0px;
+
+      }
+
+    }
+
+  }
+
+}
+
+
+
+
