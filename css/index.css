@@ -304,10 +304,10 @@ section.info div.infoTwo .container1 .largeText {
   color: #333333;
   width: 100%;
 }
-section.info div.infoTwo .container1 .largeText #PP {
+section.info div.infoTwo .container1 .largeText .PP {
   color: #ff97bc;
 }
-section.info div.infoTwo .container1 .largeText #GG {
+section.info div.infoTwo .container1 .largeText .GG {
   color: #53abbb;
 }
 @media (max-width:1000px) {
