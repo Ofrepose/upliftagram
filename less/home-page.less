@@ -12,8 +12,8 @@
   box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.4);
 
   @media @tablet{
-    background-position: top;
-    background-image: url('../images/yellowDark2.jpg');
+    background-position: bottom;
+    /*background-image: url('../images/yellowDark2.jpg');*/
   }
 }
 
@@ -25,13 +25,18 @@ header{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  align-content: center;
 
-  @media @mobile{
-      width: 100%;
-    }
+  
 
     @media @tablet{
       width: 100%;
+    }
+
+    @media @mobile{
+      width: 100%;
+      height: 100%;
     }
 
 
@@ -47,6 +52,7 @@ header{
 
     @media @mobile{
       width: 100%;
+      height: 400px;
     } 
   }
   
