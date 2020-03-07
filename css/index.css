@@ -161,6 +161,8 @@ header h1.title {
     font-size: 40px;
     letter-spacing: 6px;
     height: 45px;
+    padding: 0;
+    background-color: #333333;
   }
 }
 header h1.title span#highlighter2 {
@@ -197,6 +199,8 @@ header h4.underTitle {
     font-size: 20px;
     letter-spacing: 3px;
     height: 30px;
+    width: 100%;
+    margin-top: 0px;
   }
 }
 header h4.underTitle span.highlighter {
