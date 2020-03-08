@@ -74,6 +74,11 @@ nav a.navLinks:hover {
   font-weight: 800;
   cursor: pointer;
 }
+@media (max-width:800px) {
+  nav {
+    height: 50px;
+  }
+}
 /*Footer*/
 footer {
   background-color: #333333;
