@@ -7,4 +7,11 @@ $(function(){
 		$('.tMain').css('display','block');
 		$(":header").css('display','inline-block');
 	});
+	// $(".tMain").click(function(){
+	// 	$("#loginDiv").hide();
+	// 	$('#slogan').show();
+	// 	$('.tMain').css('display','flex');
+	// 	$(":header").css('display','flex');
+
+	// });
 })
