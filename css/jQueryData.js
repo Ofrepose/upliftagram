@@ -4,5 +4,6 @@ $(function(){
 	$('#login').click(function(){
 		$('#slogan').hide();
 		$("#loginDiv").show();
+		$('.tMain').css('display','block');
 	});
 })
