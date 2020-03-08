@@ -10,6 +10,10 @@
 
   <link href="css/index.css" rel="stylesheet">
 
+  <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="css/jQueryData.js"></script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -27,7 +31,7 @@
 
         <a href='about-page.html' class="navLinks">About</a>
         
-        <a href='https://pintereach-pt-1.netlify.com/login' class="navLinks">Sign In</a>
+        <a  class="navLinks" id="login">Sign In</a>
 
       </section>
 
@@ -41,7 +45,27 @@
 
         <h4 class="underTitle">The most <span class=highlighter>POSITIVE</span> place on earth</h4>
 
-        <div id="signup"><a href="https://pintereach-pt-1.netlify.com/signup">Signup</div>
+        <div id="signup"><a href="https://pintereach-pt-1.netlify.com/signup">Signup</a></div>
+
+      </section>
+
+      <section id="loginDiv">
+
+        <form id="loginForm" method="POST" action="" enctype="multipart/form-data" >
+          
+          <h3 class="aboveTxt">Email:</h3>
+
+          <input class="f_data" type="email" name="email" placeholder="Email">
+
+          <h3 class="aboveTxt">Password:</h3>
+
+          <input class="f_data" type="password" name="p_word" placeholder="Password">
+
+          <h3 class="aboveTxt2"></h3>
+
+          <div class="f_dataS">Login</div>
+
+        </form>
 
       </section>
 
@@ -67,7 +91,7 @@
       
         <h2 class="largeText">
           
-          BE <span class=PP>YOURSELF</span><br><br> WITHOUT <span class=GG>WORRY</span><br><br> WITHOUT <span class=PP>JUDGEMENT</span><br><BR> BLAH BLAH BLAH<BR><BR>
+          BE <span class=PP>YOURSELF</span><br><br> WITHOUT <span class=GG>WORRY</span><br><br> WITHOUT JUDGEMENT<br><BR> BLAH BLAH BLAH<BR><BR>
 
         </h2>
 
