@@ -384,6 +384,7 @@ section.info div.infoOne .contentBlock .underTag {
   font-size: 40px;
   color: #333333;
   letter-spacing: 6px;
+  text-align: center;
 }
 section.info div.infoOne .contentBlock .underTag .highlight3 {
   color: #65b4c3;
