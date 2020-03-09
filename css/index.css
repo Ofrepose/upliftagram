@@ -463,7 +463,7 @@ section.info div.infoTwo .container1 .largeText .WW {
 }
 @media (max-width:800px) {
   section.info div.infoTwo .container1 {
-    padding: 5px;
+    padding: 12px;
     width: 100vw;
   }
 }
