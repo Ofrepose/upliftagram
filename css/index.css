@@ -385,7 +385,7 @@ section.info div.infoOne .contentBlock .underTag {
   color: #333333;
   letter-spacing: 6px;
 }
-section.info div.infoOne .contentBlock .underTag #highlight3 {
+section.info div.infoOne .contentBlock .underTag .highlight3 {
   color: #65b4c3;
   font-weight: 1000;
   /*text-decoration: underline;*/
@@ -422,6 +422,13 @@ section.info div.infoTwo .container1 .largeText .PP {
 }
 section.info div.infoTwo .container1 .largeText .GG {
   color: #53abbb;
+}
+section.info div.infoTwo .container1 .largeText .WW {
+  color: #ff97bc;
+  font-weight: 1000;
+  /*text-decoration: underline;*/
+  border-bottom: 0.45px solid #0d0d0d;
+  border-top: 0.45px solid #0d0d0d;
 }
 @media (max-width:1000px) {
   section.info div.infoTwo .container1 .largeText {
