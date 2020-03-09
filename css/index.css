@@ -396,6 +396,11 @@ section.info div.infoOne .contentBlock .underTag .highlight3 {
   border-bottom: 0.45px solid #ff97bc;
   border-top: 0.45px solid #ff97bc;
 }
+@media (max-width:800px) {
+  section.info div.infoOne {
+    height: 500px;
+  }
+}
 section.info div.infoTwo {
   width: 100%;
   /*height: 100vh;*/
@@ -458,7 +463,7 @@ section.info div.infoTwo .container1 .largeText .WW {
 }
 @media (max-width:800px) {
   section.info div.infoTwo .container1 {
-    padding: 0px;
+    padding: 5px;
     width: 100vw;
   }
 }
