@@ -58,10 +58,6 @@ $(function(){
 
 
 		
-		$("#0002").fadeOut(100);
-		setTimeout(function(){
-			$("#0001").delay(200).fadeIn(100);
-		},100);
 		
 
 		$("#comment").css('background-image','url("images/i/commentLove.png")');
@@ -85,6 +81,8 @@ $(function(){
 				'height':'100%',
 			},800);
 		},800);
+
+		returnSlide();
 
 		return commentState = false;
 	}
