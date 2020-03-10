@@ -467,4 +467,84 @@ section.info div.infoTwo .container1 .largeText .WW {
     width: 100vw;
   }
 }
+section.pageContainer {
+  width: 100%;
+  background-color: #fffdf9;
+  background-image: url('../images/justYellow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+}
+section.pageContainer header#mainHead {
+  height: 200px;
+}
+section.pageContainer section.mainInfo {
+  width: 100%;
+  height: 700px;
+  background-color: #fffdf9;
+}
+section.pageContainer section.mainInfo img.iMF {
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+}
+section.pageContainer section.mainInfo section.underAll {
+  width: 100%;
+  height: 200px;
+  /*background-color: green;*/
+  display: flex;
+  flex-wrap: wrap;
+}
+section.pageContainer section.mainInfo section.underOpt {
+  width: 70%;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+section.pageContainer section.mainInfo section.underOpt #heart {
+  background-image: url('../images/i/loveFire.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 50px;
+  margin-left: 5px;
+}
+section.pageContainer section.mainInfo section.underOpt #comment {
+  background-image: url('../images/i/commentLove.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 50px;
+  margin-left: 15px;
+}
+section.pageContainer section.mainInfo section.underOpt #laugh {
+  background-image: url('../images/i/laugh.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 50px;
+  margin-left: 15px;
+}
+section.pageContainer section.mainInfo section.underOpt #cry {
+  background-image: url('../images/i/cry.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 50px;
+  margin-left: 15px;
+}
+section.pageContainer section.mainInfo section.imgInfo {
+  width: 25%;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  /*background-color: blue;*/
+}
 /*@import "about-page.less";*/
