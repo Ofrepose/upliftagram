@@ -604,6 +604,28 @@ section.pageContainer section.mainInfo section.underAll section.commentDiv secti
   height: 12px;
   margin: 0;
 }
+section.pageContainer section.mainInfo section.underAll section.commentDiv #cmtInsert {
+  width: 100%;
+}
+section.pageContainer section.mainInfo section.underAll section.commentDiv #cmtInsert textarea.cmtInsertBox {
+  width: 100%;
+  background-color: #fffdf9;
+  border: none;
+  resize: none;
+  outline: #8ac6d1;
+  font-family: 'Open Sans Condensed';
+  font-size: 20px;
+  color: #333333;
+  letter-spacing: 3px;
+}
+section.pageContainer section.mainInfo section.underAll section.commentDiv #cmtInsert div#f_dataP {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Raleway';
+  font-size: 20px;
+  color: #8ac6d1;
+}
 section.pageContainer section.mainInfo section.underAll section.imgInfo {
   width: 25%;
   height: 50px;

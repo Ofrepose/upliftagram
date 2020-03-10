@@ -5,6 +5,14 @@ $(function(){
 	let cryState = false;
 	let commentState = false;
 
+	let commentBoxState = false;
+
+	$("#0002").hide();
+
+	$("#0002").css("height","0px");
+	$("#0002").css("width","0px");
+
+
 
 	function removeStates(){
 		$("#heart").css('background-image','url("images/i/loveFire.png")');
@@ -14,6 +22,7 @@ $(function(){
 		heartState = false;
 		laughState = false;
 		cryState = false;
+		commentBoxState = false;
 	};
 
 	function shrinkem(x, state){
@@ -47,7 +56,35 @@ $(function(){
 			'height':'100%',
 		},300);
 
+
+		
+		$("#0002").fadeOut(100);
+		setTimeout(function(){
+			$("#0001").delay(200).fadeIn(100);
+		},100);
+		
+
 		$("#comment").css('background-image','url("images/i/commentLove.png")');
+
+		return commentState = false;
+	}
+
+	function returnComment(){
+		$("#0002").animate({
+			'width':'0px',
+			'height':'0px',
+		},800);
+
+		setTimeout(function(){
+			$("#0002").hide();
+			$("#0001").show();
+		},800);
+		setTimeout(function(){
+			$("#0001").animate({
+				'width':'100%',
+				'height':'100%',
+			},800);
+		},800);
 
 		return commentState = false;
 	}
@@ -135,8 +172,9 @@ $(function(){
 	// COMMENT CLICKED
 
 	$("#comment").click(function(){
+
 		if(commentState === true){
-			return returnSlide();
+			return returnComment();
 		}
 		$("#heart").animate({
 			'width':'0px',
@@ -151,7 +189,32 @@ $(function(){
 			'height':'0%',
 		},300);
 
+		$("#0001").animate({
+			'width':'0px',
+			'height':'0px',
+		},800);
+
+		setTimeout(function(){
+			$("#0001").hide();
+			$("#0002").show();
+		},800);
+		setTimeout(function(){
+			$("#0002").animate({
+				'width':'100%',
+				'height':'100%',
+			},800);
+		},800);
+		
+
+		
+
 		$("#comment").css('background-image','url("images/i/commentLoveFilled.png")');
+
+		// $("#0002").show();
+		
+
+
+
 
 		return commentState = true;
 	});
