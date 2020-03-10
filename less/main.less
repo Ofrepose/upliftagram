@@ -29,63 +29,123 @@ section.pageContainer{
 			/*background-color: green;*/
 			display: flex;
 			flex-wrap: wrap;
+		
+			section.underOpt{
+				width: 70%;
+				height: 50px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+
+				#heart{
+					background-image: url('../images/i/loveFire.png');
+				    background-repeat: no-repeat;
+				    background-position: center;
+				    background-size: cover;
+				    height: 100%;
+				    width: 50px;
+				    margin-left: 5px;
+				}
+
+				#comment{
+					background-image: url('../images/i/commentLove.png');
+				    background-repeat: no-repeat;
+				    background-position: center;
+				    background-size: cover;
+				    height: 100%;
+				    width: 50px;
+				    margin-left: 15px;
+				}
+
+				#laugh{
+					background-image: url('../images/i/laugh.png');
+				    background-repeat: no-repeat;
+				    background-position: center;
+				    background-size: cover;
+				    height: 100%;
+				    width: 50px;
+				    margin-left: 15px;
+				}
+
+				#cry{
+					background-image: url('../images/i/cry.png');
+				    background-repeat: no-repeat;
+				    background-position: center;
+				    background-size: cover;
+				    height: 100%;
+				    width: 50px;
+				    margin-left: 15px;
+				}
+
+			}
+
+			section.commentDiv{
+					display: inline-block;
+					
+					height: 150px;
+					width: 100%;
+					padding: 10px;
+					/*background-color: red;*/
+
+					section.commentRow{
+						display: flex;
+						height: 100px;
+						flex-wrap: wrap;
+						align-content: center;
+						justify-content: space-between;
+						/*overflow-y: hidden;*/
+						/*text-overflow: ellipsis;*/
+
+
+						h3.cmtUN{
+							display: inline-block;
+							width: 25%;
+							.raleway(15px);
+							letter-spacing: 0px;
+							height: 100%;
+							font-weight: 900;
+							line-height: 100px;
+
+
+						}
+
+						p.cmtCon{
+							display: inline-block;
+							width: 70%;
+							.openSans(20px);
+							height: 100%;
+							/*text-overflow: ellipsis;*/
+						}
+
+					}
+
+					section.cmtUnd{
+
+						h4.cmtDate{
+
+						}
+
+						h4.cmtReply{
+
+						}
+					}
+
+
+
+
+
+				}
+
+			section.imgInfo{
+				width: 25%;
+				height: 50px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: flex-end;
+				/*background-color: blue;*/
+			}
 		}
-		section.underOpt{
-			width: 70%;
-			height: 50px;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: flex-start;
 
-			#heart{
-				background-image: url('../images/i/loveFire.png');
-			    background-repeat: no-repeat;
-			    background-position: center;
-			    background-size: cover;
-			    height: 100%;
-			    width: 50px;
-			    margin-left: 5px;
-			}
-
-			#comment{
-				background-image: url('../images/i/commentLove.png');
-			    background-repeat: no-repeat;
-			    background-position: center;
-			    background-size: cover;
-			    height: 100%;
-			    width: 50px;
-			    margin-left: 15px;
-			}
-
-			#laugh{
-				background-image: url('../images/i/laugh.png');
-			    background-repeat: no-repeat;
-			    background-position: center;
-			    background-size: cover;
-			    height: 100%;
-			    width: 50px;
-			    margin-left: 15px;
-			}
-
-			#cry{
-				background-image: url('../images/i/cry.png');
-			    background-repeat: no-repeat;
-			    background-position: center;
-			    background-size: cover;
-			    height: 100%;
-			    width: 50px;
-			    margin-left: 15px;
-			}
-		}
-
-		section.imgInfo{
-			width: 25%;
-			height: 50px;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: flex-end;
-			/*background-color: blue;*/
-		}
 	}
 
 }
