@@ -10,7 +10,7 @@ $(function(){
 	$("#0002").hide();
 
 	$("#0002").css("height","0px");
-	$("#0002").css("width","0px");
+	$("#0002").css("width","100%");
 
 
 
@@ -67,7 +67,7 @@ $(function(){
 
 	function returnComment(){
 		$("#0002").animate({
-			'width':'0px',
+			// 'width':'0px',
 			'height':'0px',
 		},800);
 
@@ -188,7 +188,7 @@ $(function(){
 		},300);
 
 		$("#0001").animate({
-			'width':'0px',
+			// 'width':'0px',
 			'height':'0px',
 		},800);
 
@@ -198,9 +198,9 @@ $(function(){
 		},800);
 		setTimeout(function(){
 			$("#0002").animate({
-				'width':'100%',
+				// 'width':'100%',
 				'height':'100%',
-			},800);
+			},1200);
 		},800);
 		
 

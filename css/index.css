@@ -604,6 +604,9 @@ section.pageContainer section.mainInfo section.underAll section.commentDiv secti
   height: 12px;
   margin: 0;
 }
+section.pageContainer section.mainInfo section.underAll section.commentDiv #0002 {
+  overflow: hidden;
+}
 section.pageContainer section.mainInfo section.underAll section.commentDiv #cmtInsert {
   width: 100%;
 }
