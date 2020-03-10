@@ -18,12 +18,12 @@ $(function(){
 
 	function shrinkem(x, state){
 		$(x).animate({
-			'width':'45px',
+			'width':'30px',
 			'height':'100% - 5px',
 		},200);		
 
 		$(x).animate({
-			'width':'50px',
+			'width':'35px',
 			'height':'100%',
 		},200);
 
@@ -35,15 +35,15 @@ $(function(){
 
 	function returnSlide(){
 		$("#heart").animate({
-			'width':'50px',
+			'width':'35px',
 			'height':'100%',
 		},300);
 		$("#laugh").animate({
-			'width':'50px',
+			'width':'35px',
 			'height':'100%',
 		},300);
 		$("#cry").animate({
-			'width':'50px',
+			'width':'35px',
 			'height':'100%',
 		},300);
 
@@ -68,14 +68,14 @@ $(function(){
 		}
 		removeStates();
 		$("#heart").animate({
-			'width':'55px',
+			'width':'40px',
 			'height':'100% + 5px',
 		},200);
 
 		$("#heart").css('background-image','url("images/i/loveFireFilled.png")');
 
 		$("#heart").animate({
-			'width':'50px',
+			'width':'35px',
 			'height':'100%',
 		},200);
 
@@ -92,14 +92,14 @@ $(function(){
 		}
 		removeStates();
 		$("#laugh").animate({
-			'width':'55px',
+			'width':'40px',
 			'height':'100% + 5px',
 		},200);
 
 		$("#laugh").css('background-image','url("images/i/laughFilled.png")');
 
 		$("#laugh").animate({
-			'width':'50px',
+			'width':'35px',
 			'height':'100%',
 		},200);
 
@@ -116,14 +116,14 @@ $(function(){
 		}
 		removeStates();
 		$("#cry").animate({
-			'width':'55px',
+			'width':'40px',
 			'height':'100% + 5px',
 		},200);
 
 		$("#cry").css('background-image','url("images/i/cryFilled.png")');
 
 		$("#cry").animate({
-			'width':'50px',
+			'width':'35px',
 			'height':'100%',
 		},200);
 
