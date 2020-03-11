@@ -186,22 +186,11 @@ $(function(){
 			'width':'0px',
 			'height':'0%',
 		},300);
-
-		$("#0001").animate({
-			// 'width':'0px',
-			'height':'0px',
-		},800);
-
-		setTimeout(function(){
-			$("#0001").hide();
-			$("#0002").show();
-		},800);
-		setTimeout(function(){
-			$("#0002").animate({
-				// 'width':'100%',
+		$("#0002").show();
+		$("#0002").animate({
 				'height':'100%',
-			},1200);
-		},800);
+			},0);
+		
 		
 
 		
