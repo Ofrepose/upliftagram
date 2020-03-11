@@ -1,57 +1,41 @@
-$(function(){
 
-	let heartState = false;
+let heartState = false;
 	let laughState = false;
 	let cryState = false;
 	let commentState = false;
 
 	let commentBoxState = false;
 
-	$("#0002").hide();
 
-	$("#0002").css("height","0px");
-	$("#0002").css("width","100%");
+$(function(){
+
+	// let heartState = false;
+	// let laughState = false;
+	// let cryState = false;
+	// let commentState = false;
+
+	// let commentBoxState = false;
+
+	$(".0002").hide();
+
+	$(".0002").css("height","0px");
+	$(".0002").css("width","100%");
 
 
 
-	function removeStates(){
-		$("#heart").css('background-image','url("images/i/loveFire.png")');
-		$("#laugh").css('background-image','url("images/i/laugh.png")');
-		$("#cry").css('background-image','url("images/i/cry.png")');
-		commentState = false;
-		heartState = false;
-		laughState = false;
-		cryState = false;
-		commentBoxState = false;
-	};
+	
 
-	function shrinkem(x, state){
-		$(x).animate({
-			'width':'30px',
-			'height':'100% - 5px',
-		},200);		
-
-		$(x).animate({
-			'width':'35px',
-			'height':'100%',
-		},200);
-
-		removeStates();
-
-		return state = false;
-
-	};
 
 	function returnSlide(){
-		$("#heart").animate({
+		$(".heart").animate({
 			'width':'35px',
 			'height':'100%',
 		},300);
-		$("#laugh").animate({
+		$(".laugh").animate({
 			'width':'35px',
 			'height':'100%',
 		},300);
-		$("#cry").animate({
+		$(".cry").animate({
 			'width':'35px',
 			'height':'100%',
 		},300);
@@ -60,23 +44,23 @@ $(function(){
 		
 		
 
-		$("#comment").css('background-image','url("images/i/commentLove.png")');
+		$(".comment").css('background-image','url("images/i/commentLove.png")');
 
 		return commentState = false;
 	}
 
 	function returnComment(){
-		$("#0002").animate({
+		$(".0002").animate({
 			// 'width':'0px',
 			'height':'0px',
 		},800);
 
 		setTimeout(function(){
-			$("#0002").hide();
-			$("#0001").show();
+			$(".0002").hide();
+			$(".0001").show();
 		},800);
 		setTimeout(function(){
-			$("#0001").animate({
+			$(".0001").animate({
 				'width':'100%',
 				'height':'100%',
 			},800);
@@ -97,43 +81,42 @@ $(function(){
 
 	// HEART CLICK
 
-	$("#heart").click(function(){
-		if(heartState === true){
-			return shrinkem('#heart', heartState);
-		}
-		removeStates();
-		$("#heart").animate({
-			'width':'40px',
-			'height':'100% + 5px',
-		},200);
+	// $(".heart").click(function(){
+	// 	if(heartState === true){
+	// 		return shrinkem('.heart', heartState);
+	// 	}
+	// 	removeStates();
+	// 	$(".heart").animate({
+	// 		'width':'40px',
+	// 		'height':'100% + 5px',
+	// 	},200);
 
-		$("#heart").css('background-image','url("images/i/loveFireFilled.png")');
+	// 	$(".heart").css('background-image','url("images/i/loveFireFilled.png")');
 
-		$("#heart").animate({
-			'width':'35px',
-			'height':'100%',
-		},200);
+	// 	$(".heart").animate({
+	// 		'width':'35px',
+	// 		'height':'100%',
+	// 	},200);
 
-		return heartState = true;
+	// 	return heartState = true;
 
-		// SEND JSON DATA TO SERVER HERE FOR CLICK
-	});
+	// });
 
 	// LAUGH LIKE
 
-	$("#laugh").click(function(){
+	$(".laugh").click(function(){
 		if(laughState === true){
-			return shrinkem('#laugh', laughState);
+			return shrinkem('.laugh', laughState);
 		}
 		removeStates();
-		$("#laugh").animate({
+		$(".laugh").animate({
 			'width':'40px',
 			'height':'100% + 5px',
 		},200);
 
-		$("#laugh").css('background-image','url("images/i/laughFilled.png")');
+		$(".laugh").css('background-image','url("images/i/laughFilled.png")');
 
-		$("#laugh").animate({
+		$(".laugh").animate({
 			'width':'35px',
 			'height':'100%',
 		},200);
@@ -145,19 +128,19 @@ $(function(){
 
 	// CRY LIKE
 
-	$("#cry").click(function(){
+	$(".cry").click(function(){
 		if(cryState === true){
-			return shrinkem('#cry', cryState);
+			return shrinkem('.cry', cryState);
 		}
 		removeStates();
-		$("#cry").animate({
+		$(".cry").animate({
 			'width':'40px',
 			'height':'100% + 5px',
 		},200);
 
-		$("#cry").css('background-image','url("images/i/cryFilled.png")');
+		$(".cry").css('background-image','url("images/i/cryFilled.png")');
 
-		$("#cry").animate({
+		$(".cry").animate({
 			'width':'35px',
 			'height':'100%',
 		},200);
@@ -169,42 +152,137 @@ $(function(){
 
 	// COMMENT CLICKED
 
-	$("#comment").click(function(){
+	// $(".comment").click(function(){
 
-		if(commentState === true){
-			return returnComment();
-		}
-		$("#heart").animate({
-			'width':'0px',
-			'height':'0%',
-		},300);
-		$("#laugh").animate({
-			'width':'0px',
-			'height':'0%',
-		},300);
-		$("#cry").animate({
-			'width':'0px',
-			'height':'0%',
-		},300);
-		$("#0002").show();
-		$("#0002").animate({
-				'height':'100%',
-			},0);
+	// 	if(commentState === true){
+	// 		return returnComment();
+	// 	}
+	// 	$(".heart").animate({
+	// 		'width':'0px',
+	// 		'height':'0%',
+	// 	},300);
+	// 	$(".laugh").animate({
+	// 		'width':'0px',
+	// 		'height':'0%',
+	// 	},300);
+	// 	$(".cry").animate({
+	// 		'width':'0px',
+	// 		'height':'0%',
+	// 	},300);
+	// 	$(".0002").show();
+	// 	$(".0002").animate({
+	// 			'height':'100%',
+	// 		},0);
 		
 		
 
 		
 
-		$("#comment").css('background-image','url("images/i/commentLoveFilled.png")');
-
-		// $("#0002").show();
+	// 	$(".comment").css('background-image','url("images/i/commentLoveFilled.png")')
 		
 
 
 
 
-		return commentState = true;
-	});
+	// 	return commentState = true;
+	// });
 
 
-})
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+});
+
+function giveHeart(id){
+
+	// id is the id created at current click for what user liked. that particular emoticon is assigned the 
+	// id on load and we use that to uniquely name the id on the heart class. we then send that to shrinkem as well
+	if(heartState === true){
+		return shrinkem('#x', heartState);
+	}
+	removeStates();
+	$("#x").animate({
+		'width':'40px',
+		'height':'100% + 5px',
+	},200);
+
+	$("#x").css('background-image','url("images/i/loveFireFilled.png")');
+
+	$("#x").animate({
+		'width':'35px',
+		'height':'100%',
+	},200);
+
+	return heartState = true;
+};
+
+
+function addComment(id){
+	if(commentState === true){
+		return returnComment();
+	}
+	$(".heart").animate({
+		'width':'0px',
+		'height':'0%',
+	},300);
+	$(".laugh").animate({
+		'width':'0px',
+		'height':'0%',
+	},300);
+	$(".cry").animate({
+		'width':'0px',
+		'height':'0%',
+	},300);
+	$(".0002").show();
+	$(".0002").animate({
+		'height':'100%',
+	},0);	
+
+	$(".comment").css('background-image','url("images/i/commentLoveFilled.png")');
+
+	return commentState = true;
+}
+
+
+
+
+	function removeStates(){
+		$(".heart").css('background-image','url("images/i/loveFire.png")');
+		$(".laugh").css('background-image','url("images/i/laugh.png")');
+		$(".cry").css('background-image','url("images/i/cry.png")');
+		commentState = false;
+		heartState = false;
+		laughState = false;
+		cryState = false;
+		commentBoxState = false;
+	};
+
+
+
+	function shrinkem(x, state){
+		$(x).animate({
+			'width':'30px',
+			'height':'100% - 5px',
+		},200);		
+
+		$(x).animate({
+			'width':'35px',
+			'height':'100%',
+		},200);
+
+		removeStates();
+
+		return state = false;
+
+	};

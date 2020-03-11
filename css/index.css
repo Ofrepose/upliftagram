@@ -486,8 +486,8 @@ section.pageContainer section.mainInfo {
 }
 section.pageContainer section.mainInfo img.iMF {
   width: 100%;
-  object-fit: cover;
-  height: 500px;
+  object-fit: contain;
+  height: 100%;
 }
 section.pageContainer section.mainInfo h3.uNAvIm {
   width: 100%;
@@ -513,7 +513,7 @@ section.pageContainer section.mainInfo section.underAll section.underOpt {
   flex-wrap: wrap;
   justify-content: flex-end;
 }
-section.pageContainer section.mainInfo section.underAll section.underOpt #heart {
+section.pageContainer section.mainInfo section.underAll section.underOpt .heart {
   background-image: url('../images/i/loveFire.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -522,7 +522,7 @@ section.pageContainer section.mainInfo section.underAll section.underOpt #heart 
   width: 35px;
   margin-right: 15px;
 }
-section.pageContainer section.mainInfo section.underAll section.underOpt #comment {
+section.pageContainer section.mainInfo section.underAll section.underOpt .comment {
   background-image: url('../images/i/commentLove.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -531,7 +531,7 @@ section.pageContainer section.mainInfo section.underAll section.underOpt #commen
   width: 35px;
   margin-right: 15px;
 }
-section.pageContainer section.mainInfo section.underAll section.underOpt #laugh {
+section.pageContainer section.mainInfo section.underAll section.underOpt .laugh {
   background-image: url('../images/i/laugh.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -540,7 +540,7 @@ section.pageContainer section.mainInfo section.underAll section.underOpt #laugh 
   width: 35px;
   margin-right: 15px;
 }
-section.pageContainer section.mainInfo section.underAll section.underOpt #cry {
+section.pageContainer section.mainInfo section.underAll section.underOpt .cry {
   background-image: url('../images/i/cry.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -603,9 +603,6 @@ section.pageContainer section.mainInfo section.underAll section.commentDiv secti
   color: #ff97bc;
   height: 12px;
   margin: 0;
-}
-section.pageContainer section.mainInfo section.underAll section.commentDiv #0002 {
-  overflow: hidden;
 }
 section.pageContainer section.mainInfo section.underAll section.commentDiv #cmtInsert {
   width: 100%;

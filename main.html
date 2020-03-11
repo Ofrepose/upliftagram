@@ -44,13 +44,13 @@
 
           <section class="underOpt">
 
-            <div id="comment"></div>
+            <div class="comment"></div>
             
-            <div id="heart"></div>
+            <div class="heart"></div>
 
-            <div id="laugh"></div>
+            <div class="laugh"></div>
 
-            <div id="cry"></div>
+            <div class="cry"></div>
 
             
 
@@ -60,7 +60,7 @@
 
           </section> -->
 
-          <section class="commentDiv" id="0001">
+          <section class="commentDiv 0001" >
             
             <section class="commentRow">
               
@@ -88,7 +88,85 @@
 
           <!-- COMMENT INSERTION SECTION -->
 
-          <section class="commentDiv" id="0002">            
+          <section class="commentDiv 0002">            
+                      
+            <form id="cmtInsert" method="POST" action="" enctype="multipart/form-data" >
+        
+              <textarea class="cmtInsertBox" id="002" placeholder="Comment"></textarea>
+
+              <div id="f_dataP">Post</div>
+
+            </form>            
+
+          </section>          
+
+        </section>
+
+      </section>
+
+
+
+
+
+
+
+
+
+      <section class="mainInfo">
+
+        <h3 class="uNAvIm">_harryhoudini_</h3>
+        
+        <img src="images/uplift2.png" class="iMF" />
+
+        <section class="underAll">
+
+          <section class="underOpt">
+
+            <div class="comment"onclick="addComment('y')" id="y"></div>
+            
+            <div class="heart" onclick="giveHeart('x')" id="x"></div>
+
+            <div class="laugh"></div>
+
+            <div class="cry"></div>
+
+            
+
+          </section>
+
+          <!-- <section class="imgInfo">
+
+          </section> -->
+
+          <section class="commentDiv 0001">
+            
+            <section class="commentRow">
+              
+              <!-- <h3 class="cmtUN"></h3> -->
+
+              <p class="cmtCon"><span class="cmtUN">_harryhoudini_</span>It took until late last night for my peeps to get the app deployed and get me the links. They ran into some snags with Netlify and ended up having to pull it down</p>
+
+            </section>
+
+            <!-- OTHER USERS COMMENTS ON ITEM         -->
+
+            <section class="commentRow">
+
+              <p class="cmtCon"><span class="cmtUN">tom</span>It took until late last night for my peeps to get the app deployed and get me the links. They ran into some snags with Netlify and ended up having to pull it down</p>
+
+              <section class="cmtUnd">
+                
+                <h4 class="cmtReply">reply</h4>
+
+              </section>
+
+            </section>
+
+          </section>
+
+          <!-- COMMENT INSERTION SECTION -->
+
+          <section class="commentDiv 0002">            
                       
             <form id="cmtInsert" method="POST" action="" enctype="multipart/form-data" >
         
