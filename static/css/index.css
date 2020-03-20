@@ -128,6 +128,7 @@ header {
   align-items: center;
   align-content: center;
   /*align-content: center;*/
+  /*sign up section*/
 }
 @media (max-width:1000px) {
   header {
@@ -244,6 +245,100 @@ header section#loginDiv form#loginForm .f_dataS {
   transition: all 0.2s ease-in-out;
 }
 header section#loginDiv form#loginForm .f_dataS:hover {
+  background-color: #333333;
+  color: #8ac6d1;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+header section#suDiv {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 100%;
+  background-color: #fffdf9;
+  align-content: center;
+  border-radius: 15px;
+  box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.4);
+}
+@media (max-width:1000px) {
+  header section#suDiv {
+    width: 100%;
+  }
+}
+@media (max-width:800px) {
+  header section#suDiv {
+    width: 95%;
+    height: 500px;
+    margin: 0;
+  }
+}
+header section#suDiv form#suForm {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 90%;
+  margin: auto;
+  align-content: center;
+}
+@media (max-width:800px) {
+  header section#suDiv form#suForm {
+    width: 98%;
+  }
+}
+header section#suDiv form#suForm input.f_data {
+  display: inline-block;
+  width: 70%;
+  margin: 0 auto;
+  height: 30px;
+  font-family: 'Raleway';
+  font-size: 20px;
+  letter-spacing: 3px;
+  border: 0.05px solid #595959;
+  padding-left: 15px;
+}
+@media (max-width:800px) {
+  header section#suDiv form#suForm input.f_data {
+    width: 90%;
+  }
+}
+header section#suDiv form#suForm h3.aboveTxt {
+  width: 70%;
+  margin: 10px auto 0px auto;
+  height: 35px;
+  font-family: 'Open Sans Condensed';
+  font-size: 25px;
+}
+@media (max-width:800px) {
+  header section#suDiv form#suForm h3.aboveTxt {
+    width: 90%;
+  }
+}
+header section#suDiv form#suForm h3.aboveTxt2 {
+  width: 100%;
+  margin: 10px auto 0px auto;
+  height: 30px;
+}
+header section#suDiv form#suForm .f_dataS {
+  margin: 0 auto;
+  background-color: #8ac6d1;
+  color: #ffe3ed;
+  width: 190px;
+  height: 40px;
+  border-radius: 15px;
+  line-height: 40px;
+  text-align: center;
+  font-family: 'Open Sans Condensed';
+  font-size: 25px;
+  letter-spacing: 6px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+header section#suDiv form#suForm .f_dataS:hover {
   background-color: #333333;
   color: #8ac6d1;
   -webkit-transition: all 0.2s ease-in-out;

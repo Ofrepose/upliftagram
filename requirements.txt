@@ -1,0 +1,6 @@
+sqlalchemy
+oauth2client
+flask
+flask-mail
+flask_login
+flask_sqlalchemy

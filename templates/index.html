@@ -8,11 +8,11 @@
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway|Roboto&display=swap" rel="stylesheet">
 
-  <link href="css/index.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">
 
   <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
 
-  <script type="text/javascript" src="css/jQueryData.js"></script>
+  <script type="text/javascript" src="{{url_for('static', filename = 'css/jQueryData.js')}}"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -45,7 +45,7 @@
 
         <h4 class="underTitle">The most <span class=highlighter>POSITIVE</span> place on earth</h4>
 
-        <div id="signup"><a href="https://pintereach-pt-1.netlify.com/signup">Signup</a></div>
+        <div id="signup">Signup</div>
 
       </section>
 
@@ -60,6 +60,36 @@
           <h3 class="aboveTxt">Password:</h3>
 
           <input class="f_data" type="password" name="p_word" placeholder="Password">
+
+          <h3 class="aboveTxt2"></h3>
+
+          <div class="f_dataS">Login</div>
+
+        </form>
+
+      </section>
+
+      <!-- sign up form -->
+
+      <section id="suDiv">
+
+        <form id="suForm" method="POST" action="" enctype="multipart/form-data" >
+
+          <h3 class="aboveTxt">Username:</h3>
+
+          <input class="f_data" type="text" name="usr" placeholder="UserName">
+
+          <h3 class="aboveTxt">Email:</h3>
+
+          <input class="f_data" type="email" name="email" placeholder="Email">
+
+          <h3 class="aboveTxt">Password:</h3>
+
+          <input class="f_data" type="password" name="p_word" placeholder="Password">
+
+          <h3 class="aboveTxt">Repeat Password:</h3>
+
+          <input class="f_data" type="password" name="p_word2" placeholder="Repeat Password">
 
           <h3 class="aboveTxt2"></h3>
 
