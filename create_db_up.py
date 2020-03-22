@@ -22,6 +22,9 @@ class User(UserMixin, Base):
 	name_last = Column(
 		String(80))
 
+	username = Column(
+		String(80))
+
 	p = Column(
 		String(80), nullable = False)
 
@@ -76,11 +79,24 @@ class Image(Base):
 	img_desc = Column(
 		Text())
 
-	cmt_owner = Column(
-		Integer, nullable = False)
+	# cmt_tot = Column(
+	# 	Integer, default = 0)
 
-	cmt_tot = Column(
-		Integer, default = 0)
+class Cmts(Base):
+	__tablename__ = 'cmts'
+
+	id = Column(
+		Integer, primary_key = True)
+
+	img_id = Column(
+		Integer, ForeignKey('image.id'))
+
+	image = relationship(Image)
+
+	cmt_owner = Column(
+		Integer, ForeignKey('user.id'))
+
+	user = relationship(User)	
 
 	cmt = Column(
 		Text())

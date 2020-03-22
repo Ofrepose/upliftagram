@@ -16,6 +16,10 @@ $(function(){
 		$(":header").css('display','inline-block');
 	})
 
+	$("#createAccount").click(function(){
+		$("#suForm").submit();
+	})
+
 	// $(".tMain").click(function(){
 	// 	if($("#slogan").css('display','none')){
 	// 		$('#slogan').show();

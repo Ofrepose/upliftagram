@@ -38,7 +38,7 @@ app.secret_key = 'super_secret_key'
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-from create_db_up import Base, User, UserMixin, Image
+from create_db_up import Base, User, UserMixin, Image,Cmts
 
 
 
@@ -101,7 +101,88 @@ def logout():
 
 @app.route('/', methods = ["GET","POST"])
 def home():
+	print('home')
 	return render_template('index.html')
+
+
+@app.route('/su', methods = ["GET","POST"])
+def upsignUp():
+	print('in sign up')
+	users = session.query(User).all()
+	if request.method == 'POST':
+		for u in users:
+			print('checking if user in system already exists')
+			if u.email.lower() == request.form['email'].lower():
+				return redirect(url_for('home'))
+
+		newUser = User(username = request.form['usr'], email = request.form['email'].lower())
+		if request.form['p_word'] == request.form['p_word2']:
+
+			newUser.p = request.form['p_word']
+			session.add(newUser)
+			session.commit()
+			os.makedirs('static/im/usrs/' + str(newUser.id))
+			print('user has been created')
+			login_user(newUser, remember=True)
+			return redirect(url_for('main',user = current_user.username))
+
+		else:
+			print('passwords do not match')
+			return redirect(url_for('home'))
+
+
+
+	return redirect(url_for('home'))
+
+
+@app.route('/<string:user>')
+@login_required
+def main(user):
+	thisUser = session.query(User).filter_by(id = current_user.id).one()
+	userImages = session.query(Image).filter_by(user_id = current_user.id).all()
+	cmts = session.query(Cmts).all()
+
+	return render_template('main.html',cmts = cmts, folder = str(thisUser.id), user = thisUser, userImages = userImages)
+
+
+# photoUploads
+
+@app.route('/upload/', methods = ['GET','POST'])
+@login_required
+def upload_photo():
+	userinfo = session.query(User).filter_by(id = current_user.id).one()
+	allphotos = session.query(Image).filter_by(user_id = current_user.id).all()
+	if request.method == 'POST':
+		print('inside upload photo request')
+		# check if the post requiest has the file part included
+		if 'file' not in request.files:
+			return redirect(request.url)
+		file = request.files['file']
+		if file.filename == '':
+			return redirect(request.url)
+		if file and allowed_file(file.filename):
+			filename = secure_filename(file.filename)
+			path = 'static/im/usrs/' + str(userinfo.id)
+			print(path)
+			UPLOAD_FOLDER = os.path.dirname ('static/im/usrs/' + str(userinfo.id) + '/')
+			app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+			for a in allphotos:
+				if a.path == filename:
+					filename = filename + str("1")
+			file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+			newPhoto = Image(path = filename, user_id = userinfo.id, img_desc = request.form['desc'])
+			session.add(newPhoto)
+			session.commit()
+			print('photo added and saved')
+			return redirect(url_for('main',user = current_user.username))
+		return redirect(url_for('main',user = current_user.username))
+	return redirect(url_for('main',user = current_user.username))
+
+
+
+
+
+
 
 
 

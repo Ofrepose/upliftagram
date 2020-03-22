@@ -9,11 +9,11 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway|Roboto&display=swap" rel="stylesheet">
 
-    <link href="css/index.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="css/jQueryData2.js"></script>
+    <script type="text/javascript" src="{{url_for('static', filename = 'css/jQueryData2.js')}}"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -36,9 +36,11 @@
 
       <section class="mainInfo">
 
-        <h3 class="uNAvIm">_harryhoudini_</h3>
+        <h3 class="uNAvIm">{{user.username}}</h3>
+
+        {% for i in userImages %}
         
-        <img src="images/womanTester.jpg" class="iMF" />
+        <img src="{{ url_for('static', filename = 'im/usrs/' + folder + '/' + i.path) }}" class="iMF" />
 
         <section class="underAll">
 
@@ -66,12 +68,14 @@
               
               <!-- <h3 class="cmtUN"></h3> -->
 
-              <p class="cmtCon"><span class="cmtUN">_harryhoudini_</span>It took until late last night for my peeps to get the app deployed and get me the links. They ran into some snags with Netlify and ended up having to pull it down</p>
+              <p class="cmtCon"><span class="cmtUN">{{user.username}}</span>{{i.img_desc}}</p>
 
             </section>
 
             <!-- OTHER USERS COMMENTS ON ITEM         -->
+            {% for c in cmts %}
 
+              {% if c.img_id == i.id %}
             <section class="commentRow">
 
               <p class="cmtCon"><span class="cmtUN">tom</span>It took until late last night for my peeps to get the app deployed and get me the links. They ran into some snags with Netlify and ended up having to pull it down</p>
@@ -83,6 +87,10 @@
               </section>
 
             </section>
+
+              {% endif %}
+
+            {% endfor %}
 
           </section>
 
@@ -101,6 +109,8 @@
           </section>          
 
         </section>
+
+        {% endfor %}
 
       </section>
 

@@ -564,6 +564,7 @@ section.info div.infoTwo .container1 .largeText .WW {
 }
 section.pageContainer {
   width: 100%;
+  min-height: 100vh;
   background-color: #fffdf9;
   background-image: url('../images/justYellow.png');
   background-repeat: no-repeat;
@@ -572,7 +573,7 @@ section.pageContainer {
   display: inline-block;
 }
 section.pageContainer header#mainHead {
-  height: 200px;
+  height: 80px;
 }
 section.pageContainer section.mainInfo {
   width: 100%;
