@@ -20,6 +20,10 @@ $(function(){
 		$("#suForm").submit();
 	})
 
+	$("#lif").click(function(){
+		$("#loginForm").submit();
+	})
+
 	// $(".tMain").click(function(){
 	// 	if($("#slogan").css('display','none')){
 	// 		$('#slogan').show();

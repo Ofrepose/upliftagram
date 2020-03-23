@@ -77,7 +77,7 @@ mail = Mail(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
 
-login_manager.login_view = "login"
+login_manager.login_view = "home"
 
 @login_manager.user_loader
 def load_user(id):
@@ -133,6 +133,22 @@ def upsignUp():
 
 
 	return redirect(url_for('home'))
+
+
+@app.route('/si', methods = ["GET","POST"])
+def sifUsr():
+	users = session.query(User).all()
+	if request.method == 'POST':
+		for u in users:
+			if u.email.lower() == request.form['email']:
+				if u.p == request.form['p_word']:
+					login_user(u, remember=True)
+					return redirect(url_for('main', user = u))
+				return redirect(url_for('home'))
+
+		return redirect(url_for('home'))
+	return redirect(url_for('home'))
+
 
 
 @app.route('/<string:user>')
